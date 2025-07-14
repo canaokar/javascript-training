@@ -1,0 +1,3 @@
+### Greet user
+GET http://localhost:3000/greet/Chinmay HTTP/1.1
+content-type: application/json
