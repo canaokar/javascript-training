@@ -1,0 +1,3 @@
+### Get weather data
+GET http://localhost:3000/weather?city=London&unit=metric HTTP/1.1
+content-type: application/json
