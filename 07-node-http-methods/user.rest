@@ -1,0 +1,34 @@
+### Create a user
+POST http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+  "userId": "u1",
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
+### Get a user
+GET http://localhost:3000/user/u1 HTTP/1.1
+content-type: application/json
+
+### Replace a user
+PUT http://localhost:3000/user/u1 HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Bob",
+  "email": "bob@example.com"
+}
+
+### Update a user
+PATCH http://localhost:3000/user/u1 HTTP/1.1
+content-type: application/json
+
+{
+  "email": "bob.new@example.com"
+}
+
+### Delete a user
+DELETE http://localhost:3000/user/u1 HTTP/1.1
+content-type: application/json

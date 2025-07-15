@@ -1,0 +1,16 @@
+### Register with valid input
+POST http://localhost:3000/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
+### Register with missing name
+POST http://localhost:3000/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "alice@example.com"
+}
