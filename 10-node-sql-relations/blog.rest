@@ -1,0 +1,23 @@
+### Create user
+POST http://localhost:3000/user
+content-type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
+### Create post for user 1
+POST http://localhost:3000/user/1/post
+content-type: application/json
+
+{
+  "title": "My first post",
+  "content": "This is the content of my post."
+}
+
+### Get posts by user 1
+GET http://localhost:3000/user/1/posts
+
+### Get all posts with user info
+GET http://localhost:3000/posts
