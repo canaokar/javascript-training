@@ -1,0 +1,14 @@
+### Create cars table
+GET http://localhost:3000/init-db HTTP/1.1
+
+### Insert a car
+POST http://localhost:3000/insert HTTP/1.1
+content-type: application/json
+
+{
+  "car_name": "Toyota",
+  "color": "Red"
+}
+
+### List all cars
+GET http://localhost:3000/list HTTP/1.1
