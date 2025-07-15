@@ -1,0 +1,8 @@
+### Test base route
+GET http://localhost:3000/
+
+### Trigger simulated error
+GET http://localhost:3000/error
+
+### Test non-existing route (404)
+GET http://localhost:3000/unknown
