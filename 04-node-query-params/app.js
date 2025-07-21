@@ -1,6 +1,10 @@
 const express = require("express");
+require('dotenv').config();
 const app = express();
 const port = 3000;
+
+// Get API key from environment variables, so that you don't expose it in your code
+const API_KEY = process.env.WEATHER_API_KEY;
 
 // TODO: Create a GET route at /weather
 // Read query parameters 'city' and 'unit' from req.query
