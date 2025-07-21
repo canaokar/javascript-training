@@ -1,11 +1,11 @@
 const express = require("express");
 const axios = require("axios");
+require('dotenv').config();
 
 const app = express();
-const port = 3000;
 
-// Replace this with your actual API key
-const API_KEY = "YOUR_API_KEY";
+// Get API key from environment variables, so that you don't expose it in your code
+const API_KEY = process.env.WEATHER_API_KEY;
 
 app.get("/weather", async (req, res) => {
   const { city, unit } = req.query;

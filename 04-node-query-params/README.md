@@ -16,7 +16,12 @@ This module combines query parameter handling with an external API call to OpenW
 
 ## How to Run
 
-1. Replace `YOUR_API_KEY` in `solution/app.js` with your actual OpenWeatherMap API key.
+1. Create a `.env` file and put your actual OpenWeatherMap API key in there. Make sure, that you don't add the `.env` file to your git! Add the `.env` file to your `.gitignore` !
+
+```
+WEATHER_API_KEY=Your actual OpenWeatherMap API key
+```
+
 2. Then run:
 
 ```bash
