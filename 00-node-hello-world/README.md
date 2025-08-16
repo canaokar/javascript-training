@@ -21,7 +21,7 @@ node app.js
 
 ## How to Test
 
-Use the REST Client extension in VS Code to run:
+Use the [https://marketplace.visualstudio.com/items?itemName=humao.rest-client](REST Client extension) in VS Code to run:
 
 ```
 GET http://localhost:3000/
