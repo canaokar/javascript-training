@@ -1,0 +1,12 @@
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "password": "password123"
+}
+
+### Access protected route (Replace TOKEN with actual token)
+GET http://localhost:3000/protected
+Authorization: Bearer TOKEN
